@@ -1,0 +1,134 @@
+  
+   <!--Design by foolishdeveloper.com -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cabin', sans-serif;
+    background:  #292F33;
+}
+.card-wrap{
+    height: 13.65rem;
+    width: 27.15rem;
+    border-radius: 0.37rem;
+    perspective: 1000px;
+}
+.card{
+    height: inherit;
+    width: inherit;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d; 
+}
+.card-front,.card-back{
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    backface-visibility: hidden;
+    border-radius: 0.37rem;
+}
+.card-front{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d30404;
+}
+.card-logo img{
+  width: 290px;
+}
+.card-back{
+    background-color: #CCD6DD;
+    transform: rotateY(180deg);
+}
+.card-back .user img{
+    width: 35%;
+    float: left;
+    border-radius: 50%;
+    margin: 1.6rem 1.1rem;
+    box-shadow: 3px 3px 10px #66757F;
+}
+.card-wrap:hover .card{
+    transform: rotateY(180deg);
+}
+.user-info{
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #292F33;
+    padding: 1.6rem 1.1rem;
+}
+.user-info .username{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(2, 68, 99);
+}
+.user-info .user-bio{
+    font-size: 1rem;
+    margin: 1.1rem 0;
+}
+.follow-btn{
+    padding: 0.5rem;
+    width: 9rem;
+    color: #E1E8ED;
+    background-color: #ce0505;
+    border: 0;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.0625rem;
+    border-radius: 0.27rem;
+    margin: 0 auto;
+}
+.follow-btn:hover{
+    cursor: pointer;
+    background-color: #ff0d41;
+    color: white;
+}
+  </style>
+</head>
+<body>
+
+  <div class="card-wrap">
+    <div class="card">
+        <div class="card-front">
+            <div class="card-logo">
+               <img src="https://i.pinimg.com/originals/19/7b/36/197b365922d1ea3aa1a932ff9bbda4a6.png"/>
+            </div>
+        </div>
+
+        <div class="card-back">
+            <div class="user">
+                <img src="https://lh3.googleusercontent.com/a-/AOh14Gj99VObFyE8W_h8RrcwZO_aYiIHu5AAa_XpnOym=s600-k-no-rp-mo" alt="user-profile-picture">
+            </div>
+            <div class="user-info">
+                <div class="username">Foolish Developer</div>
+                <div class="user-bio">
+                    <p>Hello world!<br>
+                      Foolish Developer is a Youtube Channel where you can find tutorials on web design<br>
+             
+                </div>
+                <button class="follow-btn" onclick="window.location.href='https:#'">Subscribe</button>
+            </div>
+        </div>
+    </div>
+    </div>
+<div class="blog"><a href=""></a></div>
+  
+</body>
+</html>
